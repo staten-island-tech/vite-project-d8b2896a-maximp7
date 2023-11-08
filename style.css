@@ -1,0 +1,14 @@
+:root {
+    --blue: #2998ef
+    --orange:  #ff7730;
+    --primary: var(--orange);
+}
+body{
+    background-color: var(--primary);
+}
+.light{
+    --primary: var(var(--orange));
+}
+.dark{
+    --primary:
+}
