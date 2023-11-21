@@ -108,5 +108,7 @@ const menu = [
     Vegan: false,
     Appetizer: true,
     All: true,
-  }
-]
+  },
+];
+
+export { menu };
