@@ -1,17 +1,15 @@
-:root {
-    --item-body: red;
+.summer {
+    --item-body: orange;
     --item-button-border: black;
-    --header-border: rgb(208, 195, 75);
-    --header-button-shadow: rgb(195, 15, 15);
-    --item-shadow: rgb(255, 152, 34);
-    --body: rgb(203, 133, 3);
-  }
-  
-  :root.theme-winter {
-    --item-body: rgb(17, 0, 255);
+    --header-button-shadow: rgb(163, 0, 0);
+    --item-shadow: rgb(180, 107, 107);
+    --body: rgb(255, 109, 12);
+}
+.winter {
+    --item-body: blue;
     --item-button-border: black;
-    --header-border: rgb(137, 230, 225);
-    --header-button-shadow: rgb(24, 21, 230);
-    --item-shadow: rgb(132, 203, 224);
-    --body: rgb(136, 165, 202);
-  }
+    --header-button-shadow: rgb(0, 103, 163);
+    --item-shadow: rgb(107, 153, 180);
+    --body: rgb(56, 214, 219);
+
+}

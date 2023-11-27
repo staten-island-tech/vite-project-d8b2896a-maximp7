@@ -12,7 +12,7 @@ const menu = [
   },
   {
     name: "Cheeseburger",
-    img: "cburger.jfif",
+    img: "cburger.jpg",
     price: "$19",
     Tasty: true,
     Summer: true,
@@ -23,7 +23,7 @@ const menu = [
   },
   {
     name: "Ceaser Salad",
-    img: "cs.jfif",
+    img: "cs.jpg",
     price: "$15",
     Tasty: true,
     Summer: true,
@@ -34,7 +34,7 @@ const menu = [
   },
   {
     name: "Grilled Salmion",
-    img: "salmon.jfif",
+    img: "salmon.jpg",
     price: "$25",
     Tasty: true,
     Summer: false,
@@ -45,7 +45,7 @@ const menu = [
   },
   {
     name: "NY Strip Steak",
-    img: "steak.jfif",
+    img: "steak.jpg",
     price: "$50",
     Tasty: true,
     Summer: false,
@@ -56,7 +56,7 @@ const menu = [
   },
   {
     name: "Mac and Cheese",
-    img: "mc.jfif",
+    img: "mc.jpg",
     price: "$12",
     Tasty: true,
     Summer: true,
@@ -67,7 +67,7 @@ const menu = [
   },
   {
     name: "Calamari",
-    img: "burger.jfif",
+    img: "cal.jpg",
     price: "$17",
     Tasty: true,
     Summer: true,
@@ -78,7 +78,7 @@ const menu = [
   },
   {
     name: "Beans",
-    img: "burger.jfif",
+    img: "beans.jpg",
     price: "$8",
     Tasty: false,
     Summer: true,
@@ -89,7 +89,7 @@ const menu = [
   },
   {
     name: "Tuna Tartar",
-    img: "bt.jfif",
+    img: "tt.jpg",
     price: "$23",
     Tasty: true,
     Summer: true,
@@ -100,13 +100,35 @@ const menu = [
   },
   {
     name: "French Fries",
-    img: "burger.jfif",
+    img: "ff.jpg",
     price: "$17",
     Tasty: true,
     Summer: true,
     Winter: false,
     Vegan: false,
     Appetizer: true,
+    All: true,
+  },
+  {
+    name: "Brussel Sprouts",
+    img: "bs.jpg",
+    price: "$17",
+    Tasty: true,
+    Summer: false,
+    Winter: true,
+    Vegan: true,
+    Appetizer: true,
+    All: true,
+  },
+  {
+    name: "Hot Dog",
+    img: "hd.jpg",
+    price: "$17",
+    Tasty: true,
+    Summer: true,
+    Winter: true,
+    Vegan: false,
+    Appetizer: false,
     All: true,
   },
 ];
