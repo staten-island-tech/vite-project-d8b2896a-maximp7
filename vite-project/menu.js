@@ -1,7 +1,7 @@
 const menu = [
   {
     name: "Hamburger",
-    img: "burger.jfif",
+    img: "burger.jpg",
     price: "$17",
     Tasty: true,
     Summer: true,
