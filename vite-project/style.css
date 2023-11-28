@@ -2,12 +2,12 @@
 
 html,
 body,
- p {
+p {
   padding: 0;
   margin: 0;
   font-size: 50%;
   box-sizing: border-box;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 body {
@@ -46,12 +46,12 @@ body {
   box-shadow: 5px 5px 3px var(--header-button-shadow);
 }
 
-.main:hover{
+.main:hover {
   background-color: var(--header-button-shadow);
   color: var(--item-body-border);
 }
 
-.filter{
+.filter {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -59,7 +59,7 @@ body {
   box-sizing: border-box;
 }
 
-.filter-buttons{
+.filter-buttons {
   font-size: 4rem;
   padding: 8rem auto;
   margin: 3% auto;
@@ -71,12 +71,12 @@ body {
   box-shadow: 5px 5px 3px var(--header-button-shadow);
 }
 
-.filter-buttons:hover{
+.filter-buttons:hover {
   background-color: var(--header-button-shadow);
   color: var(--item-button-border);
 }
 
-.cardcontainer{
+.cardcontainer {
   background-color: var(--body);
   display: flex;
   flex-flow: row wrap;
@@ -85,7 +85,6 @@ body {
 }
 
 h3 {
-
   align-items: center;
   display: flex;
   justify-content: center;
@@ -102,7 +101,7 @@ img {
   box-sizing: border-box;
   width: 85%;
   padding: 5px;
-      align-items: center;
+  align-items: center;
 }
 
 .card {
@@ -117,10 +116,10 @@ img {
   border: 0.3rem solid var(--item-button-border);
 }
 .card-image {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      box-sizing: border-box;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .col {
