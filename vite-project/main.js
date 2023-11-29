@@ -1,8 +1,31 @@
 import "../styles/style.css";
 import { menu } from "./menu";
-import "./variable.css";
 
-document.querySelector(".main").addEventListener("click", function () {
+//making cards
+function Insert(arr){
+  arr.forEach((Order) => {
+    document.querySelector((".flex-container").insertAdjacentHTML
+    `<div class="card">
+    <h1 class="card-title">${Order.Name}</h1>
+    <img src="${Order.Picture}" alt="" class="card-img">
+    <p class="card-price">${Order.Price}</p>
+    </div>`)
+  });
+}
+Insert(menu)
+
+//Button Works
+DOMselectors.Form.addEventListener("submit", (event) => {
+  event.preventDefault()
+});
+
+DOMselectors.AppetizerButton.addEventListener("click", function(){
+DOMselectors.FlexContainer.innerHTML = ""
+const Appetizer = menu.filter((menu) => menu.)
+})
+
+
+/* document.querySelector(".main").addEventListener("click", function () {
   if (document.body.classList.contains("summer")) {
     document.body.classList.add("winter");
     document.body.classList.remove("summer");
@@ -114,4 +137,4 @@ function Winterp() {
 DOMSelectors.Veganb.addEventListener("click", Veganp);
 DOMSelectors.allb.addEventListener("click", Allp);
 DOMSelectors.summerb.addEventListener("click", Summerp);
-DOMSelectors.winterb.addEventListener("click", Winterp);
+DOMSelectors.winterb.addEventListener("click", Winterp); */
