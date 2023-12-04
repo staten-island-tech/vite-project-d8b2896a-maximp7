@@ -1,29 +1,61 @@
-import "../styles/style.css";
 import { menu } from "./menu";
 
-//making cards
-function Insert(arr){
-  arr.forEach((Order) => {
-    document.querySelector((".flex-container").insertAdjacentHTML
-    `<div class="card">
-    <h1 class="card-title">${Order.Name}</h1>
-    <img src="${Order.Picture}" alt="" class="card-img">
-    <p class="card-price">${Order.Price}</p>
-    </div>`)
+const DOMselectors = {
+  Form: document.getElementById("ButtonForm"),
+  AllButton: document.getElementById("Allb"),
+  MainButton: document.getElementById("Mainb"),
+  AppetizerButton: document.getElementById("Appetizerb"),
+  TastyButton: document.getElementById("Tastyb"),
+  ThemeButton: document.getElementById("themeButton"),
+  CardContainer: document.querySelector(".cardcontainer"),
+};
+
+function insertCards(arr) {
+  DOMselectors.CardContainer.innerHTML = "";
+  arr.forEach((item) => {
+    DOMselectors.CardContainer.insertAdjacentHTML('beforeend', `
+      <div class="card">
+        <h2>${item.name}</h2>
+        <img src="${item.img}" alt="${item.name}">
+        <p>Price: ${item.price}</p>
+      </div>
+    `);
   });
 }
-Insert(menu)
 
-//Button Works
 DOMselectors.Form.addEventListener("submit", (event) => {
-  event.preventDefault()
+  event.preventDefault();
 });
 
-DOMselectors.AppetizerButton.addEventListener("click", function(){
-DOMselectors.FlexContainer.innerHTML = ""
-const Appetizer = menu.filter((menu) => menu.)
-})
+DOMselectors.AllButton.addEventListener("click", () => {
+  insertCards(menu);
+});
 
+DOMselectors.MainButton.addEventListener("click", () => {
+  const mainCourses = menu.filter(item => item.Main);
+  insertCards(mainCourses);
+});
+
+DOMselectors.AppetizerButton.addEventListener("click", () => {
+  const appetizers = menu.filter(item => item.Appetizer);
+  insertCards(appetizers);
+});
+
+DOMselectors.TastyButton.addEventListener("click", () => {
+  const tastyItems = menu.filter(item => item.Tasty);
+  insertCards(tastyItems);
+});
+
+let isSummerTheme = true;
+
+DOMselectors.ThemeButton.addEventListener("click", () => {
+  isSummerTheme = !isSummerTheme;
+  document.body.classList.toggle("summer", isSummerTheme);
+  document.body.classList.toggle("winter", !isSummerTheme);
+});
+
+// Initial load
+insertCards(menu);
 
 /* document.querySelector(".main").addEventListener("click", function () {
   if (document.body.classList.contains("summer")) {
