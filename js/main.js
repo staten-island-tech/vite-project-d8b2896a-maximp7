@@ -49,12 +49,13 @@ DOMselectors.TastyButton.addEventListener("click", () => {
 let isSummerTheme = true;
 
 DOMselectors.ThemeButton.addEventListener("click", () => {
+  console.log("sidoj");
   isSummerTheme = !isSummerTheme;
   document.body.classList.toggle("summer", isSummerTheme);
   document.body.classList.toggle("winter", !isSummerTheme);
 });
 
-// Initial load
+
 insertCards(menu);
 
 /* document.querySelector(".main").addEventListener("click", function () {

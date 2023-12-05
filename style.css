@@ -1,18 +1,13 @@
-
 .summer {
-  --item-body: orange;
-  --item-button-border: black;
-  --header-button-shadow: rgb(163, 0, 0);
-  --item-shadow: rgb(180, 107, 107);
-  --body: rgb(255, 109, 12);
+  background-color: #FFA500;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
 }
 
 .winter {
-  --item-body: blue;
-  --item-button-border: black;
-  --header-button-shadow: rgb(0, 103, 163);
-  --item-shadow: rgb(107, 153, 180);
-  --body: rgb(56, 214, 219);
+  background-color: #87CEEB;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(135, 206, 250, 0.5);
 }
 
 body {
@@ -30,18 +25,17 @@ body {
 }
 
 .cardcontainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
   margin: 20px;
 }
 
 .card {
   border: 1px solid #ddd;
   border-radius: 10px;
-  margin: 10px;
   padding: 10px;
-  width: 200px;
   text-align: center;
   background-color: #f9f9f9;
 }
