@@ -23,6 +23,14 @@ function insertCards(arr) {
   });
 }
 
+let isSummerTheme = true;
+
+function toggleTheme() {
+  isSummerTheme = !isSummerTheme;
+  document.body.classList.toggle("summer", isSummerTheme);
+  document.body.classList.toggle("winter", !isSummerTheme);
+}
+
 DOMselectors.Form.addEventListener("submit", (event) => {
   event.preventDefault();
 });
@@ -46,15 +54,7 @@ DOMselectors.TastyButton.addEventListener("click", () => {
   insertCards(tastyItems);
 });
 
-let isSummerTheme = true;
-
-DOMselectors.ThemeButton.addEventListener("click", () => {
-  console.log("sidoj");
-  isSummerTheme = !isSummerTheme;
-  document.body.classList.toggle("summer", isSummerTheme);
-  document.body.classList.toggle("winter", !isSummerTheme);
-});
-
+DOMselectors.ThemeButton.addEventListener("click", toggleTheme);
 
 insertCards(menu);
 

@@ -1,20 +1,22 @@
 :root {
- --Orange: #da942b;
- --Red: #d73838;
- --Ice: #388fd7;
- --Blue: #3852d7;
- --primary:var(--Orange) 
- --secondary:v  
-
+  --Orange: #da942b;
+  --Red: #d73838;
+  --Ice: #388fd7;
+  --Blue: #3852d7;
+  --primary: var(--Orange);
+  --secondary: var(--Red);
 }
 
 .summer {
---primary: var(--Blue)
---secondary: var(--Ice)
+  --primary: var(--Orange);
+  --secondary: var(--Red);
 }
 
 .winter {
+  --primary: var(--Ice);
+  --secondary: var(--Blue);
 }
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: var(--primary);
