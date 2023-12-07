@@ -3,23 +3,14 @@
   --Red: #d73838;
   --Ice: #388fd7;
   --Blue: #3852d7;
-  --primary: var(--Orange);
-  --secondary: var(--Red);
 }
 
-.summer {
-  --primary: var(--Orange);
-  --secondary: var(--Red);
+body.summer {
+  background-color: var(--Orange);
 }
 
-.winter {
-  --primary: var(--Ice);
-  --secondary: var(--Blue);
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: var(--primary);
+body.winter {
+  background-color: var(--Ice);
 }
 
 .theme {
@@ -55,8 +46,7 @@ body {
   padding: 10px;
   font-size: 16px;
   background-color: #3498db;
-  color: #fff;
+  color: #d65454;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
 }

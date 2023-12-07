@@ -29,7 +29,7 @@ function toggleTheme() {
   isSummerTheme = !isSummerTheme;
   document.body.classList.toggle("summer", isSummerTheme);
   document.body.classList.toggle("winter", !isSummerTheme);
-}
+} 
 
 DOMselectors.Form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -54,11 +54,10 @@ DOMselectors.TastyButton.addEventListener("click", () => {
   insertCards(tastyItems);
 });
 
-DOMselectors.ThemeButton.addEventListener("click", toggleTheme);
+DOMselectors.ThemeButton.addEventListener("click", toggleTheme); 
 
 insertCards(menu);
-
-/* document.querySelector(".main").addEventListener("click", function () {
+ /* document.getElementById("themeButton").addEventListener("click", function () {
   if (document.body.classList.contains("summer")) {
     document.body.classList.add("winter");
     document.body.classList.remove("summer");
@@ -66,9 +65,9 @@ insertCards(menu);
     document.body.classList.add("summer");
     document.body.classList.remove("winter");
   }
-});
+}); */
 
-const DOMSelectors = {
+/* const DOMSelectors = {
   allb: document.querySelector("#All"),
   Veganb: document.querySelector("#Vegan"),
   summerb: document.querySelector("#Summer"),
@@ -170,4 +169,4 @@ function Winterp() {
 DOMSelectors.Veganb.addEventListener("click", Veganp);
 DOMSelectors.allb.addEventListener("click", Allp);
 DOMSelectors.summerb.addEventListener("click", Summerp);
-DOMSelectors.winterb.addEventListener("click", Winterp); */
+DOMSelectors.winterb.addEventListener("click", Winterp); */ 
