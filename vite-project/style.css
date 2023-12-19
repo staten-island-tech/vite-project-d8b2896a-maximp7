@@ -20,7 +20,7 @@
 .filter-buttons {
   margin: 10px;
   padding: 10px;
-  font-size: 1px;
+  font-size: 16px;
 }
 
 .cardcontainer {
@@ -38,7 +38,7 @@
 }
 
 .card img {
-  width: 100%;
+  width: 75%;
   border-radius: 5px;
 }
 
