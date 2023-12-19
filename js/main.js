@@ -1,4 +1,5 @@
 import { menu } from "./menu";
+import "../style.css";
 
 const DOMselectors = {
   Form: document.getElementById("ButtonForm"),

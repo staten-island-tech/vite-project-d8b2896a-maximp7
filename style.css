@@ -5,11 +5,11 @@
   --Blue: #3852d7;
 }
 
-body.summer {
+.summer {
   background-color: var(--Orange);
 }
 
-body.winter {
+.winter {
   background-color: var(--Ice);
 }
 
