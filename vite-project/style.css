@@ -5,11 +5,11 @@
   --Blue: #3852d7;
 }
 
-body.summer {
+.summer {
   background-color: var(--Orange);
 }
 
-body.winter {
+.winter {
   background-color: var(--Ice);
 }
 
@@ -25,21 +25,21 @@ body.winter {
 
 .cardcontainer {
   display: grid;
-  gap: 20px;
-  margin: 20px;
+  gap: 10px;
+  margin: 10px;
 }
 
 .card {
   border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 5px;
+  padding: 5px;
   text-align: center;
   background-color: #f9f9f9;
 }
 
 .card img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 #themeButton {
