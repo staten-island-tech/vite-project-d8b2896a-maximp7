@@ -57,6 +57,7 @@ DOMselectors.TastyButton.addEventListener("click", () => {
 DOMselectors.ThemeButton.addEventListener("click", toggleTheme); 
 
 insertCards(menu);
+
  /* document.getElementById("themeButton").addEventListener("click", function () {
   if (document.body.classList.contains("summer")) {
     document.body.classList.add("winter");
